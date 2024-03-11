@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* li태그+orange 클래스 둘 다 해당할때 */
+    li.orange {
+      background: orange;
+    }
+
+    /* 태그이름, 아이디이름, 클래스이름 셋 다 해당할때(띄어쓰기x)  */
+    li#apple.green {
+    color: yellowgreen;
+  }
+  
+h1.yellow.low#change.primary {
+  background: violet;
+}
+
+  </style>
+  
+</head>
+<body>
+
+<!-- ul.food>li.korean*4 -->
+  <ul class="food">
+    <li class="korean"></li>
+    <li class="korean"></li>
+    <li class="korean"></li>
+    <li class="korean"></li>
+  </ul>
+
+  <h1 id="change" class="yellow low primary">안녕하세요</h1>
+
+
+  <!-- div>ul>li*3 / class 여러개 사용 가능 -->
+  <div>
+    <ul>
+      <li id="apple" class="green">사과</li>
+      <li>포도</li>
+      <li class="orange">오렌지</li>
+    </ul>
+
+    <!-- div+p+span -->
+    <div class="green">당근</div>
+    <p class="big">토마토</p>
+    <span class="orange">오렌지</span>
+
+  </div>
+
+</body>
+</html>
