@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 1점 짜리 style */
+    div {
+      /* 무한대점 */
+      color: blue !important;
+    }
+    /* 100점 짜리 style */
+    #c-y {
+      color: yellow;
+    }
+      /* 10점 짜리 style */
+    .c-g {
+      color: green;
+    }
+    /* 1점 짜리 style */
+    body {
+      color: aqua;
+    }
+    /* 1점 짜리 style */
+    div {
+      color: red;
+    }
+
+    /* 1점 짜리 style */
+    h1 {
+      color: lightcoral;
+    }
+    
+    /* 100 + 1 (아이디+태그)점 짜리 style */
+    #aaa h1 {
+      color: gray;
+    }
+
+    /* 10 + 1 점 짜리 style */
+    .bbb h1 {
+      color: orangered;
+    }
+
+    /* 100 + 1 + 10 + 1 (112)점 짜리 style */
+    #aaa div.bbb h1 {
+      color: greenyellow;
+    }
+
+    /* 100 + 10 + 1 (111)점 짜리 style */
+    #aaa .bbb h1{
+      color: tomato;
+    }
+ 
+    /* 12점 */
+    div.bbb > h1 {
+      color: violet;
+    }
+
+    /* 1+100+1+0+10 = 112 */
+    ul#fruit > li:not(.orange) { 
+
+    }
+
+    /* 동점이면 젤 마지막 태그 적용됨 */
+    </style>
+</head>
+<body>
+  <!-- div{안녕하세요$}*5 -->
+  <!-- 인라인 스타일: 1000점 > style="color: orange;  -->
+  <div id="c-y" class="c-g" style="color: orange;">안녕하세요1</div>
+  <div id="c-y" class="c-g">안녕하세요2</div>
+  <div class="c-g">안녕하세요3</div>
+  <div>안녕하세요4</div>
+  <p>안녕하세요5</p>
+
+  <div id="aaa">
+    <div class="bbb">
+      <h1>안녕하세요6</h1>
+    </div>
+  </div>
+
+</body>
+</html>
