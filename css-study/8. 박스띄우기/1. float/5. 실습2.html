@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+     <!-- reset css -->
+     <link href="
+     https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+     " rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    section {
+      width: 600px;
+      border: 2px double gray;
+    }
+
+    .contents {
+      width: 22.5%;
+      height: 250px;
+      /* background: orange; */
+      border: 2px solid white;
+      float: left;
+      margin: 10px 0;
+      margin-right: 2%;
+    }
+
+    .contents .box1 {
+      background: rgb(247, 184, 184);
+    }
+    .contents .box2 {
+      background: rgb(247, 169, 247);
+    }
+    .contents .box3 {
+      background: rgb(243, 212, 151);
+    }
+    .contents .box4 {
+      background: rgb(247, 247, 169);
+    }
+    .box:first-child {
+      margin-left: 2%;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1 class="main-title">
+      나의 아름다운 정원
+    </h1>
+    <div class="sub-title">
+      <h2>사람들은 아마 자신에게 자신감을 북돋워 주는 표정 있는 꽃들을 선호할 것이다.</h2>
+    </div>
+    <div class="contents">
+      <div class="box1">
+        <img src="" alt="">
+        <div class="text">너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+        붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</div>
+      <div class="box2">
+        <img src="" alt="">
+        <div class="text">
+          드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+        어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+        </div>
+      </div>
+      <div class="box3">색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+        매우 완숙한 이미지를 풍기는 꽃이다.</div>
+      <div class="box4">태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+        속하며 송이가 적어야 제격이다.</div>
+    </div>
+    
+  </section>
+</body>
+</html>
+
+
+class 네모 -액자
+           -텍스트박스
+
+<!-- 
+나의정원-메인
+사람들 - 중간제목
+찐회색배경-네모4-사진+글 -->
