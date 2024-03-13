@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      border: 2px solid gray;
+    }
+
+    .root {
+      /* 부모 대비 비율 50% */
+      width: 500px;
+    }
+
+    /* %로 했을땐 브라우저 사이즈에 맞게 자동으로 조절됨(부모 대비 비율), px은 고정 */
+    .parent {
+      width: 50%;
+      margin-left: 10%;
+    }
+
+    .child {
+      width: 125px;
+    }
+  </style>
+</head>
+<body>
+  <!-- .root>.parent>.child*2 -->
+  <div class="root">ROOT
+    <div class="parent">PARENT
+      <div class="child">CHILD1</div>
+      <div class="child">CHILD2</div>
+    </div>
+  </div>
+</body>
+</html>
