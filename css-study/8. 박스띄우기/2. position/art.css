@@ -1,0 +1,104 @@
+@import url('../../common.css');
+
+/* base style */
+body {
+  background: #5f5e5e;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  font-family: '굴림', 'Gulim', serif;
+}
+
+/* 큰 영역, header style */
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(216, 216, 216); 
+}
+
+#wrapper header {
+  background: orange;
+  color: #fff;
+ }
+
+ #wrapper header h1 {
+  font-size: 70px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  font-family: 'NGothic', sans-serif;
+ }
+
+ #wrapper header h1 span {
+  font-size: 15px;
+  text-align: bottom;
+  display: block;
+ }
+
+ #wrapper header h2 {
+  font-size: 12px;
+  text-align: center;
+  background: rgb(221, 218, 218);
+  color: #000;
+ }
+
+ #wrapper .container {
+  background: #ccc;
+  width: 100%;
+}
+
+ #wrapper .container .side-menu {
+  float: left;
+  width: 20%;
+  /* background:ivory; */
+ }
+
+ #wrapper .container .side-menu h3 {
+  background: rgb(122, 31, 31);
+  color: #fff;
+  padding: 3px;
+  font-weight: bold;
+ }
+
+ #wrapper .container .side-menu li {
+  margin: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+ }
+
+ #wrapper .container .main-content {
+  float: left;
+  width: 60%;
+  background: rgb(180, 178, 178);
+ }
+
+ #wrapper .container .main-content .art-piece .title {
+  background: rgb(3, 3, 94);
+  color: #fff;
+  margin: 8px;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 2px;
+ }
+
+ #wrapper .container .main-content .art-piece .artist {
+  color: navy;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 8px;
+ }
+
+ #wrapper .container .main-content .art-piece .detail {
+  color: navy;
+  font-size: 8px;
+  margin: 8px;
+  padding: 2px;
+}
+
+ #wrapper .container .banner {
+  float: left;
+  width: 20%;
+
+
+ }
